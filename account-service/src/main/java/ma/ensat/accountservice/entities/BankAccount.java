@@ -1,15 +1,13 @@
 package ma.ensat.accountservice.entities;
 
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
-import jakarta.persistence.Id;
-import jakarta.persistence.Transient;
+import jakarta.persistence.*;
 import lombok.*;
 import ma.ensat.accountservice.enums.AccountType;
 import ma.ensat.accountservice.model.Customer;
 
 import java.time.LocalDate;
 
+@Entity
 @Getter @Setter @ToString @NoArgsConstructor @AllArgsConstructor @Builder
 public class BankAccount {
     @Id
